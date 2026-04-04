@@ -6,7 +6,7 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 
 @Entity(
-    tableName = "placemarker_tags",
+    tableName = "tags",
     foreignKeys = [ForeignKey(
         entity = PlacemarkerEntity::class,
         parentColumns = ["id"],

@@ -59,7 +59,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
     ksp(libs.androidx.room.compiler)
     implementation(libs.play.services.maps)
-    implementation("com.google.maps.android:maps-compose:6.12.0")
+    implementation("com.google.maps.android:maps-compose:4.3.3")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

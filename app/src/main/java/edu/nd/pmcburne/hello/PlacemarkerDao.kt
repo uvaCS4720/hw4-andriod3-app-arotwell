@@ -22,4 +22,7 @@ interface PlacemarkerDao {
     @Transaction
     @Query("SELECT * FROM placemarkers WHERE id = :id")
     suspend fun getByIdWithTags(id: Int): PlacemarkerWithTags?
+
+    @Query("SELECT DISTINCT tag FROM tags ORDER BY tag ASC")
+    suspend fun getAllUniqueTags(): List<String>
 }
